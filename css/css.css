@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%;
+  overflow: hidden; }
+
+#wrap {
+  height: 100%;
+  overflow: hidden;
+  background: #292d2e;
+  position: relative; }
+  #wrap .bg {
+    position: absolute;
+    left: 50%;
+    margin-left: -95px;
+    width: 190px;
+    height: 194px;
+    top: 50px;
+    background: url(../img/hand.png) no-repeat;
+    -webkit-animation: 1s handMove infinite linear;
+    animation: 1s handMove infinite linear; }
+  #wrap .result {
+    position: absolute;
+    left: 50%;
+    width: 280px;
+    height: 80px;
+    margin-left: -140px;
+    background: #393b3c;
+    border: #2c2c2c 1px solid;
+    border-radius: 10px;
+    box-shadow: inset #4d4f50 0 0 0 1px;
+    opacity: 0;
+    top: 150px;
+    transition: 1s opacity,1s top; }
+    #wrap .result.show {
+      opacity: 1;
+      top: 300px; }
+    #wrap .result .avatar {
+      width: 80px;
+      height: 80px;
+      background: rgba(0, 0, 0, 0.5);
+      background: url(../img/pang.jpg) no-repeat;
+      background-size: 100%;
+      float: left;
+      border-radius: 10px 0 0 10px; }
+    #wrap .result .text {
+      width: 190px;
+      height: 80px;
+      float: right;
+      line-height: 80px;
+      text-align: center;
+      color: #eee; }
+
+@keyframes handMove {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(15deg); }
+  100% {
+    transform: rotate(0deg); } }
+@-webkit-keyframes handMove {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(15deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+/*# sourceMappingURL=css.css.map */
